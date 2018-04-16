@@ -11,4 +11,7 @@ public interface RemoteService {
     @RequestMapping("/call/2")
     String call();
 
+    @RequestMapping("/insert")
+    int insert();
+
 }

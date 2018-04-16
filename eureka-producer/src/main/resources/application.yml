@@ -1,7 +1,20 @@
 spring:
   application:
     name: eureka-producer
+  datasource:
+    name: test
+    url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useSSL=false
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
 eureka:
   client:
-    serviceUrl:
+    service-url:
       defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8080
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.lyl.eureka.entity
+debug: true

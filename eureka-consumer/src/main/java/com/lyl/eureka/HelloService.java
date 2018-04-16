@@ -1,18 +1,19 @@
 package com.lyl.eureka;
 
-import com.lyl.eureka.plugin.springmvc.annotation.Trace;
+import com.tsign.cat.plugin.tookit.trace.activation.annotation.Trace;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class HelloService {
 
-    @Autowired RemoteService remoteService;
+    @Autowired
+    RemoteService remoteService;
 
     @Trace
     public String hello(){
         printHello();
-        remoteService.call();
+//        remoteService.call();
         return call1();
     }
 
@@ -26,5 +27,11 @@ public class HelloService {
     public String call1(){
         return remoteService.call();
     }
+
+    @Trace
+    public int insert(){
+        return remoteService.insert();
+    }
+
 
 }

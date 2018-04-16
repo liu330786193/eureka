@@ -1,12 +1,12 @@
 package com.lyl.eureka;
 
-import com.lyl.eureka.plugin.springmvc.annotation.Trace;
+import com.tsign.cat.plugin.tookit.trace.activation.annotation.Trace;
 import org.springframework.stereotype.Service;
 
 @Service
 public class ProducerService {
 
-    @Trace
+//    @Trace
     public Producer getProducer(Integer id){
         Producer producer = new Producer();
         producer.setId(id);

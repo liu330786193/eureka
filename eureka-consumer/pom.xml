@@ -5,7 +5,7 @@
 
 	<groupId>com.lyl</groupId>
 	<artifactId>eureka-consumer</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<parent>
@@ -80,9 +80,49 @@
 			<version>RELEASE</version>
 		</dependency>
 		<dependency>
-			<groupId>com.lyl</groupId>
-			<artifactId>my-skywalking</artifactId>
-			<version>1.0-SNAPSHOT</version>
+			<groupId>com.tsign</groupId>
+			<artifactId>cat-core</artifactId>
+			<version>1.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tsign</groupId>
+			<artifactId>tookit-trace-activation</artifactId>
+			<version>1.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tsign</groupId>
+			<artifactId>mvc-annotation-4.x-plugin</artifactId>
+			<version>1.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tsign</groupId>
+			<artifactId>spring-cloud-feign-1.x-plugin</artifactId>
+			<version>1.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tsign</groupId>
+			<artifactId>mvc-annotation-commons</artifactId>
+			<version>1.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tsign</groupId>
+			<artifactId>jdbc-commons</artifactId>
+			<version>1.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tsign</groupId>
+			<artifactId>jdbc-commons</artifactId>
+			<version>1.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tsign</groupId>
+			<artifactId>mysql-5.x-plugin</artifactId>
+			<version>1.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tsign</groupId>
+			<artifactId>feign-default-http-9.x-plugin</artifactId>
+			<version>1.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 

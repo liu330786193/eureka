@@ -6,4 +6,9 @@ public class RemoteServiceFallBack implements RemoteService {
     public String call() {
         return "request message";
     }
+
+    @Override
+    public int insert() {
+        return 0;
+    }
 }

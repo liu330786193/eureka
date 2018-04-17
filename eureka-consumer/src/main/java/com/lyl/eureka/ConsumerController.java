@@ -37,10 +37,8 @@ public class ConsumerController {
 
     @GetMapping("/insert")
     @ResponseBody
-    public String insert(){
-        RestTemplate tpl = getRestTemplate();
-        String json = tpl.getForObject("http://eureka-producer/insert", String.class);
-        return json;
+    public int insert(){
+        return helloService.insert();
     }
 
     @GetMapping("/feign")

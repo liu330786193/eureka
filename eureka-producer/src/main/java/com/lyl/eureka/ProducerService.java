@@ -1,6 +1,5 @@
 package com.lyl.eureka;
 
-import com.tsign.cat.plugin.tookit.trace.activation.annotation.Trace;
 import org.springframework.stereotype.Service;
 
 @Service

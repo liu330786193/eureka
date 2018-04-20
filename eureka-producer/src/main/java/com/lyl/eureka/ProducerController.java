@@ -2,7 +2,6 @@ package com.lyl.eureka;
 
 import com.lyl.eureka.entity.Account;
 import com.lyl.eureka.service.AccountService;
-import com.tsign.cat.plugin.tookit.trace.activation.annotation.TraceContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
@@ -18,7 +17,7 @@ public class ProducerController {
 
     @GetMapping(value = "/call/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public Producer call(@PathVariable Integer id){
-        System.out.println("traceId:" + TraceContext.traceId());
+//        System.out.println("traceId:" + TraceContext.traceId());
         return producerService.getProducer(id);
     }
 

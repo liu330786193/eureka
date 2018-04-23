@@ -18,7 +18,6 @@ public class ProducerController {
 
     @GetMapping(value = "/call/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public Producer call(@PathVariable Integer id){
-        System.out.println("traceId:" + TraceContext.traceId());
         return producerService.getProducer(id);
     }
 

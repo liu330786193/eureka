@@ -76,17 +76,17 @@
             <artifactId>toolkit-trace-activation</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <!--dependency>
+        <dependency>
             <groupId>com.tsign</groupId>
             <artifactId>cat-agent</artifactId>
             <version>1.0-SNAPSHOT</version>
-        </dependency>-->
-        <!--<dependency>
+        </dependency>
+        <dependency>
             <groupId>com.tsign</groupId>
             <artifactId>toolkit-log4j-2.x-activation</artifactId>
             <version>1.0-SNAPSHOT</version>
-        </dependency>-->
-        <!--<dependency>
+        </dependency>
+        <dependency>
             <groupId>com.tsign</groupId>
             <artifactId>mvc-annotation-4.x-plugin</artifactId>
             <version>1.0-SNAPSHOT</version>
@@ -110,7 +110,7 @@
             <groupId>com.tsign</groupId>
             <artifactId>feign-default-http-9.x-plugin</artifactId>
             <version>1.0-SNAPSHOT</version>
-        </dependency>-->
+        </dependency>
     </dependencies>
     <build>
         <plugins>

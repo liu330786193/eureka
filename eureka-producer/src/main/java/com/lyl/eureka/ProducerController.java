@@ -27,6 +27,7 @@ public class ProducerController {
         account.setAge(11);
         account.setUsername("lyl");
         account.setPassword("123456");
+//        int a = 10 / 0;
         return accountService.insert(account);
     }
 

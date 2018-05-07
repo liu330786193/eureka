@@ -1,6 +1,7 @@
 package com.lyl.eureka;
 
-import com.tsign.cat.plugin.tookit.trace.activation.annotation.TraceContext;
+import com.tsign.cat.plugin.toolkit.trace.activation.annotation.Trace;
+import com.tsign.cat.plugin.toolkit.trace.activation.annotation.TraceContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
@@ -41,11 +42,35 @@ public class ConsumerController {
         return helloService.insert();
     }
 
+    @GetMapping("/feign/errorA")
+    @ResponseBody
+    public int errorA(){
+        return helloService.errorA();
+    }
+
+    @GetMapping("/feign/errorB")
+    @ResponseBody
+    public int errorB(){
+        return helloService.errorB();
+    }
+
+    @GetMapping("/feign/errorAB")
+    @ResponseBody
+    public int errorAB(){
+        return helloService.errorAB();
+    }
+
     @GetMapping("/feign")
     @ResponseBody
     public String feign(){
         System.out.println("traceId:" + TraceContext.traceId());
         return helloService.hello();
+    }
+
+    @Trace
+    @GetMapping("test")
+    public void test(){
+        System.out.println("测试程序");
     }
 
 

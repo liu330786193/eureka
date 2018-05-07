@@ -30,4 +30,34 @@ public class ProducerController {
         return accountService.insert(account);
     }
 
+    @GetMapping(value = "/error/a", produces = MediaType.APPLICATION_JSON_VALUE)
+    void errorA(){
+        Account account = new Account();
+        account.setAge(11);
+        account.setUsername("lyl");
+        account.setPassword("123456");
+        accountService.errorA(account);
+        return;
+    }
+
+    @GetMapping(value = "/error/b", produces = MediaType.APPLICATION_JSON_VALUE)
+    void errorB(){
+        Account account = new Account();
+        account.setAge(11);
+        account.setUsername("lyl");
+        account.setPassword("123456");
+        accountService.errorB(account);
+        return;
+    }
+
+    @GetMapping(value = "/error/ab", produces = MediaType.APPLICATION_JSON_VALUE)
+    void errorAB(){
+        Account account = new Account();
+        account.setAge(11);
+        account.setUsername("lyl");
+        account.setPassword("123456");
+        accountService.errorAB(account);
+        return;
+    }
+
 }

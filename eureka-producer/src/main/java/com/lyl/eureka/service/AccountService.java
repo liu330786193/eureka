@@ -12,4 +12,10 @@ public interface AccountService {
 
     int insert(Account record);
 
+    int errorA(Account record);
+
+    int errorB(Account record);
+
+    int errorAB(Account record);
+
 }

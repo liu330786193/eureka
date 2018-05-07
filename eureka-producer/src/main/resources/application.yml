@@ -19,5 +19,7 @@ server:
 mybatis:
   mapper-locations: classpath:mapping/*.xml
   type-aliases-package: com.lyl.eureka.entity
-debug: true
+debug: false
+#logging:
+#  config: classpath:log4j2.xml
 

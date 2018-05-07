@@ -14,4 +14,14 @@ public interface RemoteService {
     @RequestMapping("/insert")
     int insert();
 
+    @RequestMapping("/error/a")
+    int errorA();
+
+    @RequestMapping("/error/b")
+    int errorB();
+
+    @RequestMapping("/error/ab")
+    int errorAB();
+
+
 }

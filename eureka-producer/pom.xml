@@ -15,6 +15,7 @@
 		<relativePath/>
 	</parent>
 
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -30,6 +31,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
+            <version>1.5.6.RELEASE</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.springframework.boot</groupId>
@@ -38,16 +40,17 @@
             </exclusions>
         </dependency>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
+            <version>1.5.8.RELEASE</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -66,24 +69,24 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
+            <version>5.1.44</version>
         </dependency>
         <dependency>
             <groupId>com.tsign</groupId>
             <artifactId>toolkit-trace-activation</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <!--dependency>
+            <groupId>com.tsign</groupId>
+            <artifactId>cat-agent</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>-->
         <!--<dependency>
             <groupId>com.tsign</groupId>
             <artifactId>toolkit-log4j-2.x-activation</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>-->
-        <dependency>
-            <groupId>com.tsign</groupId>
-            <artifactId>cat-core</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>com.tsign</groupId>
             <artifactId>mvc-annotation-4.x-plugin</artifactId>
             <version>1.0-SNAPSHOT</version>
@@ -107,7 +110,7 @@
             <groupId>com.tsign</groupId>
             <artifactId>feign-default-http-9.x-plugin</artifactId>
             <version>1.0-SNAPSHOT</version>
-        </dependency>
+        </dependency>-->
     </dependencies>
     <build>
         <plugins>
@@ -115,6 +118,14 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>1.4.2.RELEASE</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>6</source>
+                    <target>6</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>

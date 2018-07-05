@@ -2,7 +2,6 @@ package com.lyl.eureka;
 
 import com.lyl.eureka.entity.Account;
 import com.lyl.eureka.service.AccountService;
-import com.tsign.cat.plugin.toolkit.trace.activation.annotation.TraceContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;

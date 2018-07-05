@@ -13,6 +13,9 @@
 		<module>eureka-consumer</module>
 		<module>eureka-producer</module>
 		<module>eureka-server</module>
+		<module>eureka-zuul</module>
+		<module>eureka-consumer-zuul-a</module>
+		<module>eureka-consumer-zuul-b</module>
 	</modules>
 
 

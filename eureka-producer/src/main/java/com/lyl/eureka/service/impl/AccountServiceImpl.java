@@ -3,8 +3,8 @@ package com.lyl.eureka.service.impl;
 import com.lyl.eureka.dao.AccountDao;
 import com.lyl.eureka.entity.Account;
 import com.lyl.eureka.service.AccountService;
-import com.tsign.cat.plugin.toolkit.trace.activation.annotation.ActiveSpan;
-import com.tsign.cat.plugin.toolkit.trace.activation.annotation.Trace;
+import com.tsign.cat.toolkit.trace.ActiveSpan;
+import com.tsign.cat.toolkit.trace.Trace;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Service;
@@ -21,7 +21,6 @@ public class AccountServiceImpl implements AccountService {
     @Trace
     @Override
     public List<Account> selectList() {
-        ActiveSpan.tag("需要发送", "日志报警");
         List<Account> list = accountDao.selectList();
         return list;
     }
@@ -36,7 +35,18 @@ public class AccountServiceImpl implements AccountService {
     public int insert(Account record) {
         int a = accountDao.insert(record);
         selectList();
+        testPrivateTrace();
         return a;
+    }
+
+    @Trace
+    private void testPrivateTrace(){
+        //...监控私有方法添加注解
+    }
+
+    @Trace
+    public void testStaticTrace(){
+        //监控静态方法添加注解
     }
 
     @Trace

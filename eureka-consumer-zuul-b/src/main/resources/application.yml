@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: eureka-consumer-zuul-a
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 2222

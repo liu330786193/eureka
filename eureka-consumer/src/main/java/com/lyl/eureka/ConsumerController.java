@@ -1,7 +1,7 @@
 package com.lyl.eureka;
 
-import com.tsign.cat.toolkit.trace.Trace;
-import com.tsign.cat.toolkit.trace.TraceContext;
+import com.timevale.cat.toolkit.trace.Trace;
+import com.timevale.cat.toolkit.trace.TraceContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;

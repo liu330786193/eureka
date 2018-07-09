@@ -70,7 +70,8 @@
 		<dependency>
 			<groupId>com.tsign</groupId>
 			<artifactId>mysql-5.x-plugin</artifactId>
-			<version>1.0-SNAPSHOT</version>
+			liuyli
+
 		</dependency>
 		<dependency>
 			<groupId>com.tsign</groupId>

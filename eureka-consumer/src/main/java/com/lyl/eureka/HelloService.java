@@ -1,6 +1,6 @@
 package com.lyl.eureka;
 
-import com.tsign.cat.toolkit.trace.Trace;
+import com.timevale.cat.toolkit.trace.Trace;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
